@@ -2,6 +2,8 @@
 body {
     font-family: 'Roboto';
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 .header-logo {
     font-size: 24px;
@@ -36,10 +38,18 @@ ul {
 .hero {
     padding: 0px 200px 18px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+.penguin {
+    height: auto;
+    width: auto;
+    border: none;
 }
 img {
     flex-grow: 0;
+    border: 5px solid #3882f6;
+    height: 100px;
+    width: 100px;
 }
 button {
     background-color: #3882f6;
@@ -47,4 +57,30 @@ button {
     border-radius: 10%;
     padding: 2px 12px;
     margin: 10px 0px;
+}
+.second-row {
+    padding: 10px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.second-row-list {
+    display: flex;
+}
+.third-row {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 200px;
+    background-color: #e5e7eb;
+}
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 50;
+    color: #1f2937;
+}
+.quoted-person {
+    align-self: flex-end;
+}
+.bottom-row {
 }
